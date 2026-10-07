@@ -19,11 +19,14 @@ body {
 }
  .badge { 
     position: absolute; top: 12px; right: 12px; background: #ffc107; color: #222; 
-    padding: 4px 10px; border-radius: 999px; font-weight: bold; 
+    padding: 4px 10px; border-radius: 999px; font-weight: bold; animation: pulse 2s infinite;
 }
 h1 { 
     color: #fff; 
 }
 footer { 
     color: #fff; 
+}
+@keyframes pulse { 
+    0%, 100% { transform: scale(1); } 50% { transform: scale(1.15); } 
 }
